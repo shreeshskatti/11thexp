@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   secrets-manager:
-    DATABASE_PASS: "my-app-secrets:DB_PASSWORD"
+    DATABASE_PASS: "my-app-sercets:DB_PASSWORD"
 
 phases:
   install:
