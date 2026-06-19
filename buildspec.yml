@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  secrets-manager:
+    DATABASE_PASS: "my-app-secrets:DB_PASSWORD"
+
 phases:
   install:
     runtime-versions:
@@ -11,7 +15,7 @@ phases:
 
   build:
     commands:
-      - echo "Compiling and testing code"
+      - echo "Compiling and testing code using secured password"
       - mvn test
 
   post_build:
